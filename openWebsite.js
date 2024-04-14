@@ -1,11 +1,10 @@
 const axios = require("axios");
-const { setInterval } = require("timers");
 const express = require("express");
 
 const app = express();
 
 // Define the URL of your website
-const websiteUrl = "https://front-render-eakv.onrender.com/";
+const websiteUrl = "https://contact-management-utxi.onrender.com/";
 
 // Function to make a request to your website
 const openWebsite = async () => {
@@ -17,14 +16,14 @@ const openWebsite = async () => {
   }
 };
 
-// Interval in milliseconds (2 minutes in this case)
-const interval = 2 * 60 * 1000;
+// Interval in milliseconds (40 seconds in this case)
+const interval = 40 * 1000;
 
 // Start opening the website at regular intervals
 const timer = setInterval(openWebsite, interval);
 
 // Log when the script starts
-console.log("Script started. Opening website every 2 minutes.");
+console.log("Script started. Opening website every 40 seconds.");
 
 // Route to handle GET requests to the root URL
 app.get("/", (req, res) => {

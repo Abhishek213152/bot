@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 
 // Define the URL of your website
-const websiteUrl = "https://contact-management-utxi.onrender.com/";
+const websiteUrl = "https://backend-i4i8.onrender.com/";
 
 // Function to make a request to your website
 const openWebsite = async () => {
